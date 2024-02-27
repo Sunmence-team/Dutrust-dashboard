@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 100vh;
+}
+.content{
+    width: 375px;
+    background-color: #fff;
+    padding-bottom: 42px !important;
+}
+.navspace {
+    cursor: pointer;
+}
+.content-3{
+    padding: 5% 0 !important;
+}
+.content-1{
+    padding-bottom: 30px !important;
+}
+.content-2{
+    padding-bottom: 12px !important;
+    position: relative;
+    height: 400px;
+}
+
+.button-box .btn-light{
+    width: 163px;
+    transition: 0.5s ease-in;
+}
+.exchange-active{
+    background-color: #000077 !important;
+    color: #fff !important;
+}
+.arrow{
+    padding: 5px 10px !important;
+    background-color: #000077;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.content-4{
+    padding-top: 55.8px !important;
+}
+.content-4 .btn-primary{
+    width: 100%;
+    height: 54.51px;
+}
+.first input{
+    overflow-wrap: break-word;
+    border: none;
+    outline: none;
+}
+#qrimage{
+    width: 220px;
+    margin: 0 auto;
+}
+input{
+    width: 120px;
+    border: none;
+    outline: none;
+    border-left: 1px solid #000077 !important;
+}
+
+select{
+    border: none;
+    outline: none;
+}
+
+#Withdraw{
+    display: none;
+}
+#with input{
+    width: 100%;
+}
+.fbox-1 input{
+    overflow-wrap: break-word;
+}
+.copytext{
+    position: relative;
+}
+.copytext:active{
+    background: #000077 !important;
+}
+.copytext::before{
+    content: 'Copied';
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background: #000077 !important;
+    padding: 8px 10px !important;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    display: none;
+}
+.copytext :after{
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #000077 !important;
+    transform: rotate(45deg);
+    display: none;
+}
+.copytext .active::before, .copytext.active:after{
+    display: block;
+}
+
+.content-4 button{
+    background-color: #000077;
+    color: #fff;
+}
+
+@media(max-width: 767px){
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-4 .btn-primary{
+      margin-top: 50px !important;
+    }
+    .navbar{
+        padding-bottom: 50px !important;
+    }
+}

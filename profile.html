@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kyc.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/2f6a9712c2.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+   <div class="bottom-navbar">
+    <nav >
+        <a href="index.html" class="nav-link ">
+            <div class="text-center">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+        </a>
+        <a  type="button" class="cat" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="nav-link">
+            <div class="text-center">
+                <i class="fa-solid fa-coins"></i>
+                <p>Loan</p>
+            </div>
+        </a>
+        <a href="myCard.html" class="nav-link">
+            <div class="text-center">
+                <i class="fa-solid fa-credit-card"></i>
+                <p>Card</p>
+            </div>
+        </a>
+        <a href="transaction.html" class="nav-link">
+            <div class="text-center">
+                <i class="fa-solid fa-file-invoice"></i>
+                <p>Transaction</p>
+            </div>
+        </a>
+       
+        <a href="profile.html" class="nav-link actives">
+            <div class="text-center">
+                <i class="fa-solid fa-user"></i>
+                <p>Profile</p>
+            </div>
+        </a>
+    </nav>
+   </div>
+
+    <main>
+        <div class="side-bar">
+
+            <div class="top">
+                <h3><i class="fa-solid fa-piggy-bank"></i> Brand</h3>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house-chimney"></i>  Overview</a>
+                </li>
+                <li>
+                    <a href="myCard.html"><i class="fa-solid fa-credit-card"></i>  Cards</a>
+                </li>
+                <li>
+                    <a href="loan.html"><i class="fa-solid fa-receipt"></i>  Loan</a>
+                </li>
+                <li>
+                    <a href="transaction.html"><i class="fa-solid fa-file-invoice"></i>  Transactions</a>
+                </li>
+                <li  class="active">
+                    <a href="profile.html"><i class="fa-solid fa-user"></i>  Profile</a>
+                </li>
+               
+            </ul>
+            <div class="bottom">
+                <div class="setting">
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>setting</p>
+                    </a>
+                </div>
+                <div class="sign-out">
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Sign Out</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+
+            <nav class="top-nav">
+                <div class="greeting">
+                    <h5>Hello,</h5>
+                    <span>Diane</span>
+                </div>
+                <div class="profiles">
+                    <i class="fa-solid fa-bell d-none"></i>
+                    <a href="settings.html" class="text-decoration-none text-dark"><i class="fa-solid fa-gear"></i></a>
+                    <a href="profile.html" class="profile">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div class="name text-dark">
+                            <h5>Diane</h5>
+                            <span>diane@gmail.com</span>
+                    </div>
+                </a>
+            </nav>
+
+            <div class="center">
+
+                <div class="row gap-2">
+                    <div class="p-balance d-flex justify-content-between align-items-centercenter  col-12 col-sm-5 bg-light p-3 border shadow">
+                       <div class="profile">
+                        <img class="rounded-circle" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" width="40px" alt="">
+                        <div class="name">
+                            <h5>Diane</h5>
+                            <span>Acc No: 0000000 <i class="fa-regular fa-copy ms-2"></i></span>
+                       </div>
+                       </div>
+                     </div>
+                     
+                     <div class="p-balance d-flex justify-content-between align-items-centercenter  col-12 col-sm-5 bg-light p-3 border shadow">
+                        <div class="bal-amount">
+                         <p>Balance</p>
+                         <h4>#0.00</h4>
+                        </div>
+                        <div class="p-buttons mt-auto">
+                         <a href="#" class="btn  p-1 p-sm-2 px-2">Deposit</a>
+                         <a href="#" class="btn  p-1 p-sm-2 px-2">Withdraw</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="details-container row border p-2 mt-4">
+                    <div class="col-6">
+                        <b>Full Name</b>
+                        <p>John Smith</p>
+                    </div>
+                    <div class="col-6">
+                        <b>Account Number</b>
+                        <p>000000000</p>
+                    </div>
+                    <div class="col-6">
+                        <b>Email</b>
+                        <p>Exampole@gmail.com <small class="text-warning">Verify Email !</small></p>
+                    </div>
+                    <div class="col-6">
+                        <b>Gender</b>
+                        <p>Male</p>
+                    </div>
+                    <div class="col-6">
+                        <b>Date of Birth</b>
+                        <p>21/**/**</p>
+                    </div>
+                    <div class="col-6">
+                        <b>Address</b>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="levels-container p-3 mb-5 ">
+                    <div id="kycUp" class=" mb-4  d-flex justify-content-between">
+                        <b>KYC</b>
+                       <p class="text-danger"><i class="me-1 fa-solid fa-triangle-exclamation"></i> Not yet verified !</p>
+                    </div> 
+                    <div  class="d-flex justify-content-between" >
+                        <b>Authentication</b>
+                        <p  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid ms-auto fa-circle-check text-success"></i> Account Verified</p>
+                       
+                    </div>
+                </div>
+                </div>
+
+
+
+                <!-- KYC Form -->
+                <div class="lat kyc-down">
+                    <div class="ala">
+                      <h3>KVC Verification Process</h3>
+                      <p>Begin the form to unlock exclusive benefits and personalized services.</p>
+                      <form action="" class="mt-4">
+                        <div class="row bro gap-4 ">
+                          <div class="col col-lg-5 bro col-12">
+                            <label for="identity" class="mb-1">Identity:</label> <br>
+                            <select id="identity" >
+                            <option value="default"  selected disabled></option>
+                            <option value="passport">Passport</option>
+                            <option value="driverLicense">Driver License</option>
+                            <option value="nin">National ID Card</option>
+                        </select>
+                          </div>
+                          <div class="col col-lg-5 col-12 bra bee">
+                            <label for="profofid" class="mb-1">Prof of Identity</label> <br>
+                            <input type="file">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="address" class="mb-1">Address</label> <br>
+                            <input type="text">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="profofaddress" class="mb-1">Prof of Address</label> <br>
+                            <input type="file">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="nationlity" class="mb-1">Nationality</label> <br>
+                            <input type="text">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="DOB" class="mb-1">Date of Birth</label> <br>
+                            <input type="date">
+                          </div>
+              
+                          <div class="col col-lg-5 bro mt-3 col-12">
+                            <label for="occupation" class="mb-1">Occupation</label> <br>
+                            <select id="occupation">
+                            <option value="default" selected disabled></option>
+                            <option value="selfemployed">Self-employed</option>
+                            <option value="employed">Employed</option>
+                            <option value="government">Government Worker</option>
+                            <option value="student">Student</option>
+                            <option value="others">Others</option>
+                        </select>
+                          </div>
+              
+                          <div class="col col-lg-5 bro mt-3 col-12">
+                            <label for="sex" class="mb-1">Sex</label> <br>
+                            <select id="sex">
+                            <option value="default" selected disabled></option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="tax" class="mb-1">Tax Identification Number/Social Security Number</label> <br>
+                            <input type="number">
+                          </div>
+              
+                          <h5 class="mt-5 text-center">Next of Kin's Information</h5>
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="nextname" class="mb-1">Next of Kin's Name</label> <br>
+                            <input type="text">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="nextemail" class="mb-1">Next of Kin's Email</label> <br>
+                            <input type="email">
+                          </div>
+                          
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="nextno" class="mb-1">Next of Kin's Phone Number</label> <br>
+                            <input type="number">
+                          </div>
+              
+                          <div class="col col-lg-5 bra mt-3 col-12">
+                            <label for="nextaddress" class="mb-1">Next of Kin's Address</label> <br>
+                            <input type="text">
+                          </div>
+              
+                          <div class="col col-lg-5 bro mt-3 col-12">
+                            <label for="occupation" class="mb-1">Relation to Next of Kin</label> <br>
+                            <select id="occupation">
+                            <option value="default" selected disabled></option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="sister">Sister</option>
+                            <option value="brother">Brother</option>
+                            <option value="aunt">Aunt</option>
+                            <option value="uncle">Uncle</option>
+                            <option value="distant">Distant Relations</option>
+                        </select>
+                          </div>
+              
+              
+                          <div class="col col-lg-5 bro mt-3 col-12">
+                            <label for="nextoccupation" class="mb-1">Next of kin'sOccupation</label> <br>
+                            <select id="occupation">
+                            <option value="default" selected disabled></option>
+                            <option value="selfemployed">Self-employed</option>
+                            <option value="employed">Employed</option>
+                            <option value="government">Government Worker</option>
+                            <option value="student">Student</option>
+                            <option value="others">Others</option>
+                        </select>
+                          </div>
+              
+                          
+              
+                        </div>
+                        <div class="man mt-4">
+                          <button class="button2  shadow">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+        </div>
+    </main>
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Authentication</h1>
+          <!-- <div class="text-danger ms-3">Not yet verified !</div> -->
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mb-2">
+            <div class="settings-container">
+                <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Bank Card
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-7">
+                            
+                            <b class="mb-">Please enter your card details</b> <br>
+                            <small>By providing your card information, you authorize your card in accordance with our terms and conditions.</small>
+                            <form class="bg p-2 mt-2">
+                                <div class="card-number">
+                                    <label>Card Number</label> <br>
+                                    <input type="number" placeholder="Enter 16-19 digits number " class="border-0 w-100">
+                                </div>
+                                <div class="exp/cvv row">
+                                  <div class="exp col-6">
+                                    <label>EXP Date</label>
+                                    <input type="number" placeholder="MM / YY" class="border-0">
+                                  </div>
+                                  <div class="cvv col-6">
+                                    <label>CVV</label>
+                                    <input type="number" placeholder="Enter CVV" class="border-0">
+                                  </div>
+                                </div>
+                                <div class="card-number">
+                                    <label>Card PIN</label> <br>
+                                    <input type="number" placeholder="Enter card PIN " class="border-0">
+                                </div>
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Bank Account
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-7">
+                            
+                            <b class="mb-">Please enter your bank account details</b> <br>
+                           
+                            <form class="bg p-2 mt-2">
+                                <div class="bankAccount">
+                                    <label>Bank Account</label> <br>
+                                    <input type="number" placeholder="Enter your bank account number " class="border-0 w-100">
+                                </div>
+                                <div class="bank">
+                                    <label>Bank</label> <br>
+                                    <div class="inputBank d-flex gap-2">
+                                       
+                                    <input type="number" placeholder="Select a Bank " class="border-0 w-100">
+                                    </div>
+                                </div>
+                               
+                                    <input type="submit" value="submit" name="submit" class="btn btn-secondary py-1 px-2">
+                               
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+
+                   <div class="mt-2 p-2 border border-1 d-flex justify-content-between align-items-center">
+                    <p>Bank Account</p>
+                    <p class="text-success">Account verified <i class="fa-solid fa-circle-check text-success ms-2"></i></p>
+                   </div>
+
+                   <div class="mt-2 p-2 border border-1 d-flex justify-content-between align-items-center">
+                    <p>Valid ID Card</p>
+                    <p class="text-success">ID verified <i class="fa-solid fa-circle-check text-success ms-2"></i></p>
+                   </div>
+                  
+                    </div>
+                    </div>
+        </div>
+        <div class="modal-footer p-2">
+            <button type="button" class="btn btn-primary me-auto py-1 px-2">Save changes</button>
+          <button type="button" class="py-1 px-2 btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+   
+            <!-- Loan Modal -->
+            <div class="container">
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Types of loan</h5>
+                              <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <a href="loanapplication.html" class="we">
+                                   <div class="me shadow-lg p-3 mb-4 rounded">
+                                      <i class="fa-solid fa-person-breastfeeding"></i>
+                                      <h6>
+                                         Personal Interest
+                                         <p>8% interest</p>
+                                     </h6>
+                                   </div> 
+                                </a>
+      
+                                <a href="loanapplication.html" class="we">
+                                   <div class="me shadow-lg p-3 mb-4 rounded">
+                                      <i class="fa-solid fa-house-chimney-user"></i>
+                                      <h6>
+                                      Home or Mortages
+                                      <p>6% interest</p>
+                                     </h6>
+                                   </div> 
+                                </a>
+      
+                                <a href="loanapplication.html" class="we">
+                                   <div class="me shadow-lg p-3 mb-4 rounded">
+                                      <i class="fa-solid fa-landmark"></i>
+                                      <h6>
+                                         Auto Loans
+                                         <p>14% Interest</p>
+                                     </h6>
+                                   </div> 
+                                </a>
+      
+                                <a href="loanapplication.html" class="we">
+                                   <div class="me shadow-lg p-3 mb-4 rounded">
+                                      <i class="fa-solid fa-briefcase"></i>
+                                      <h6>
+                                        Business Loans
+                                        <p>18% interest</p>
+                                     </h6>
+                                   </div> 
+                                </a>
+      
+                                <a href="loanapplication.html" class="we">
+                                   <div class="me shadow-lg p-3 mb-4 rounded">
+                                      <i class="fa-solid fa-graduation-cap"></i>
+                                   <h6>
+                                      Student Loans
+                                      <p>3% interest</p>
+                                  </h6>
+                                   </div> 
+                                </a>   
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+               </div>
+
+  <script>
+    let kycUp = document.querySelector("#kycUp").addEventListener("click", () => {
+        document.querySelector(".lat").style.display = "block";
+        console.log("click");
+    })
+  </script>
+
+</body>
+</html>

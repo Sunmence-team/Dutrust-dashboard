@@ -1,39 +1,63 @@
-const signInbtn = document.querySelector("#sign-in-btn")
-const signUpBtn = document.querySelector("#sign-up-btn")
-const container = document.querySelector(".container-one")
-const signInBtn2= document.querySelector("#sign-in-btn2")
-const signUpBtn2= document.querySelector("#sign-up-btn2")
-const signUpForm = document.querySelector('.signup-form')
-const signInForm = document.querySelector('.signin-form')
-const containerOne = document.querySelector('.container-one')
+
+let card1 = document.querySelector("#card1");
+
+let card2 = document.querySelector("#card2");
+
+let card3 = document.querySelector("#card3");
+
+let atmName = document.querySelector("#atmName");
 
 
-signUpBtn.addEventListener('click', ()=>{
-    container.classList.add("sign-up-mode")
-
-   
-})
-signInbtn.addEventListener('click', ()=>{
-    container.classList.remove("sign-up-mode")
+card1.addEventListener("click", () => {
+    card1.style.width = "260px";
+    card1.style.height = "160px";
     
-
-
-})
-signUpBtn2.addEventListener('click', ()=>{
-  
-    container.classList.add("sign-up-mode2")
- 
-    container.classList.add('signUp')
-  
+    card2.style.width = "250px";
+    card2.style.height = "150px";
     
-   
-   
+    card3.style.width = "250px";
+    card3.style.height = "150px";
+
+    atmName.textContent  = "Mastercard"
+
 })
-signInBtn2.addEventListener('click', ()=>{
-    container.classList.remove("sign-up-mode2")
-    container.classList.remove('signUp')
-  
+
+card2.addEventListener("click", () => {
+    card2.style.width = "260px";
+    card2.style.height = "160px";
+    
+    card1.style.width = "250px";
+    card1.style.height = "150px";
+    
+    card3.style.width = "250px";
+    card3.style.height = "150px";
+
+    atmName.textContent  = "Visa"
 
 
-   
 })
+
+card3.addEventListener("click", () => {
+    card3.style.width = "260px";
+    card3.style.height = "160px";
+
+    card2.style.width = "250px";
+    card2.style.height = "150px";
+    
+    card1.style.width = "250px";
+    card1.style.height = "150px";
+
+    atmName.textContent  = "Verve";
+
+    var afterElement = document.querySelector("#checkboxInput1:checked + .toggleSwitch::after");
+    if (afterElement) {
+        afterElement.style.transform = "translateX(5px)"; 
+    }
+
+
+
+
+});
+
+
+
